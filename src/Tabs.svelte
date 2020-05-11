@@ -69,7 +69,7 @@
     }
   });
 
-  $: selectedTabIndex, ()=>{
+  $: {
     selectedTab.set(tabs[selectedTabIndex]);
     selectedPanel.set(panels[selectedTabIndex]);
   };
